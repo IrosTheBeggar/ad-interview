@@ -24,6 +24,11 @@ async function loadBinaryList(filepath) {
     }
   }
 
+  // Add the last value
+  if(tempString !== '') {
+    returnArray.push(tempString);
+  }
+
   return returnArray;
 }
 
